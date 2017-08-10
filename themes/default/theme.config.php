@@ -16,19 +16,6 @@ return [
         __DIR__ . '/view/',
     ],
 
-    'assetic_manager' => [
-
-        'collections' => [
-        ],
-
-        'paths' => [
-            __DIR__ . '/public/'
-        ],
-
-        'maps' => [
-        ],
-    ],
-
     'widget_manager' => [
         'template_map' => [
         ],

@@ -68,39 +68,39 @@ return [
         ],
     ],
 
-    \MSBios\Guard\Module::class => [
-
-        'role_providers' => [
-            \MSBios\Guard\Provider\RoleProvider::class => [
-            ]
-        ],
-
-        'resource_providers' => [
-            \MSBios\Guard\Provider\ResourceProvider::class => [
-                'INDEX'
-            ]
-        ],
-
-        'rule_providers' => [
-            \MSBios\Guard\Provider\RuleProvider::class => [
-                'allow' => [
-                    // [['GUEST'], 'INDEX', ['VIEW', 'SHOW']],
-                ],
-                'deny' => [
-                ]
-            ]
-        ],
-
-        'guard_listeners' => [
-            \MSBios\Guard\Listener\ControllerListener::class => [
-                [
-                    'controller' => Controller\IndexController::class,
-                    'action' => 'index',
-                    'roles' => ['GUEST']
-                ]
-            ]
-        ]
-    ],
+//    \MSBios\Guard\Module::class => [
+//
+//        'role_providers' => [
+//            \MSBios\Guard\Provider\RoleProvider::class => [
+//            ]
+//        ],
+//
+//        'resource_providers' => [
+//            \MSBios\Guard\Provider\ResourceProvider::class => [
+//                'INDEX'
+//            ]
+//        ],
+//
+//        'rule_providers' => [
+//            \MSBios\Guard\Provider\RuleProvider::class => [
+//                'allow' => [
+//                    // [['GUEST'], 'INDEX', ['VIEW', 'SHOW']],
+//                ],
+//                'deny' => [
+//                ]
+//            ]
+//        ],
+//
+//        'guard_listeners' => [
+//            \MSBios\Guard\Listener\ControllerListener::class => [
+//                [
+//                    'controller' => Controller\IndexController::class,
+//                    'action' => 'index',
+//                    'roles' => ['GUEST']
+//                ]
+//            ]
+//        ]
+//    ],
 
     \MSBios\Theme\Module::class => [
         'themes' => [
@@ -118,21 +118,6 @@ return [
                         'pattern' => '%s.mo',
                     ],
                 ],
-                'assetic_manager' => [
-
-                    'collections' => [
-                        // Collections
-                    ],
-
-                    'paths' => [
-                        __DIR__ . '/../themes/default/public/'
-                    ],
-
-                    'maps' => [
-                        // Maps
-                    ],
-                ],
-
                 'widget_manager' => [
                     'template_map' => [
                     ],

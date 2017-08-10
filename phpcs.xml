@@ -21,9 +21,6 @@
             <property name="ignoreBlankLines" value="false"/>
         </properties>
     </rule>
-    <rule ref="PSR1.Files.SideEffects">
-        <exclude-pattern>public/index.php</exclude-pattern>
-    </rule>
 
     <!-- Paths to check -->
     <file>config</file>
