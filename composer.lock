@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "91354448a29257bb0646dc772eb87c97",
+    "content-hash": "f087ccb0f2d62a0bd71a2c2a61cc286c",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -123,16 +123,16 @@
         },
         {
             "name": "msbios/navigation",
-            "version": "v0.0.2",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-navigation.git",
-                "reference": "bfaab831b3702db3434528809b336ae2e2feca3b"
+                "reference": "c969295afe36a949e1d1913d5f98900453e0787b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-navigation/zipball/bfaab831b3702db3434528809b336ae2e2feca3b",
-                "reference": "bfaab831b3702db3434528809b336ae2e2feca3b",
+                "url": "https://api.github.com/repos/msbios/msbios-navigation/zipball/c969295afe36a949e1d1913d5f98900453e0787b",
+                "reference": "c969295afe36a949e1d1913d5f98900453e0787b",
                 "shasum": ""
             },
             "require": {
@@ -168,7 +168,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2017-08-09T12:58:18+00:00"
+            "time": "2017-08-11T20:41:11+00:00"
         },
         {
             "name": "msbios/stdlib",
