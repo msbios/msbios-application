@@ -7,10 +7,14 @@
 
 namespace ApplicationTest\Controller;
 
-use Application\Controller\IndexController;
+use MSBios\Application\Controller\IndexController;
 use Zend\Stdlib\ArrayUtils;
 use Zend\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
 
+/**
+ * Class IndexControllerTest
+ * @package ApplicationTest\Controller
+ */
 class IndexControllerTest extends AbstractHttpControllerTestCase
 {
     public function setUp()
