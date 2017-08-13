@@ -27,7 +27,6 @@
     "zendframework/zend-loader": "^2.5",
     "zendframework/zend-servicemanager": "^3.3",
     "zendframework/zend-modulemanager": "^2.8",
-    "digitalnature/php-ref": "^1.2",
     "patchwork/utf8": "^1.3",
     "msbios/msbios": "^0.0.1",
     "msbios/widget": "^0.0.1",
