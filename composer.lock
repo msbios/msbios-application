@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "fad8d1c4dd8cc36562044bdf22680988",
+    "content-hash": "22f464c8a27e998d7e63b97d95d40f3f",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -116,24 +116,24 @@
         },
         {
             "name": "msbios/assetic",
-            "version": "v0.0.3",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-assetic.git",
-                "reference": "73a34686f056c4a7a58ccf0459aad368dbdb800f"
+                "reference": "6cb050ac023b2a7ac5f2adbd10f4058524206da0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-assetic/zipball/73a34686f056c4a7a58ccf0459aad368dbdb800f",
-                "reference": "73a34686f056c4a7a58ccf0459aad368dbdb800f",
+                "url": "https://api.github.com/repos/msbios/msbios-assetic/zipball/6cb050ac023b2a7ac5f2adbd10f4058524206da0",
+                "reference": "6cb050ac023b2a7ac5f2adbd10f4058524206da0",
                 "shasum": ""
             },
             "require": {
                 "kriswallsmith/assetic": "^1.4",
-                "msbios/msbios": "^0.0.1"
+                "msbios/msbios": "~1.0"
             },
             "require-dev": {
-                "msbios/debug": "^0.0.3",
+                "msbios/debug": "~1.0",
                 "phpunit/phpunit": "^5.7",
                 "squizlabs/php_codesniffer": "^3.0",
                 "zendframework/zend-mvc": "^3.1",
@@ -160,24 +160,24 @@
             "keywords": [
                 "php"
             ],
-            "time": "2017-08-21T15:13:49+00:00"
+            "time": "2017-09-09T19:30:31+00:00"
         },
         {
             "name": "msbios/i18n",
-            "version": "v0.1.0",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-i18n.git",
-                "reference": "6f76bc512726bc9f593550ffc4e366337f9f04dd"
+                "reference": "e47de32ddd852ee86697b624472e47187acaacd0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-i18n/zipball/6f76bc512726bc9f593550ffc4e366337f9f04dd",
-                "reference": "6f76bc512726bc9f593550ffc4e366337f9f04dd",
+                "url": "https://api.github.com/repos/msbios/msbios-i18n/zipball/e47de32ddd852ee86697b624472e47187acaacd0",
+                "reference": "e47de32ddd852ee86697b624472e47187acaacd0",
                 "shasum": ""
             },
             "require": {
-                "msbios/msbios": "^0.0.1",
+                "msbios/msbios": "~1.0",
                 "zendframework/zend-i18n": "^2.7",
                 "zendframework/zend-modulemanager": "^2.8",
                 "zendframework/zend-servicemanager": "^3.3",
@@ -209,20 +209,20 @@
             "keywords": [
                 "php"
             ],
-            "time": "2017-08-11T21:38:46+00:00"
+            "time": "2017-09-09T19:38:39+00:00"
         },
         {
             "name": "msbios/msbios",
-            "version": "v0.0.1",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-msbios.git",
-                "reference": "90e31adf2480acf0e8e529ad803429d920faba11"
+                "reference": "b4091efba59fec44a429fe83c7ea0b3e50a793ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-msbios/zipball/90e31adf2480acf0e8e529ad803429d920faba11",
-                "reference": "90e31adf2480acf0e8e529ad803429d920faba11",
+                "url": "https://api.github.com/repos/msbios/msbios-msbios/zipball/b4091efba59fec44a429fe83c7ea0b3e50a793ac",
+                "reference": "b4091efba59fec44a429fe83c7ea0b3e50a793ac",
                 "shasum": ""
             },
             "require": {
@@ -244,24 +244,24 @@
                     "email": "info@msbios.com"
                 }
             ],
-            "time": "2017-07-10T07:23:56+00:00"
+            "time": "2017-09-09T18:26:16+00:00"
         },
         {
             "name": "msbios/navigation",
-            "version": "v0.1.0",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-navigation.git",
-                "reference": "c969295afe36a949e1d1913d5f98900453e0787b"
+                "reference": "f983fdf01f24253fc63caa5392f326c421002781"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-navigation/zipball/c969295afe36a949e1d1913d5f98900453e0787b",
-                "reference": "c969295afe36a949e1d1913d5f98900453e0787b",
+                "url": "https://api.github.com/repos/msbios/msbios-navigation/zipball/f983fdf01f24253fc63caa5392f326c421002781",
+                "reference": "f983fdf01f24253fc63caa5392f326c421002781",
                 "shasum": ""
             },
             "require": {
-                "msbios/msbios": "^0.0.1",
+                "msbios/msbios": "~1.0",
                 "zendframework/zend-loader": "^2.5",
                 "zendframework/zend-modulemanager": "^2.8",
                 "zendframework/zend-navigation": "^2.8",
@@ -293,11 +293,11 @@
             "keywords": [
                 "php"
             ],
-            "time": "2017-08-11T20:41:11+00:00"
+            "time": "2017-09-09T19:09:19+00:00"
         },
         {
             "name": "msbios/stdlib",
-            "version": "v0.0.5",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-stdlib.git",
@@ -347,30 +347,30 @@
         },
         {
             "name": "msbios/theme",
-            "version": "v0.0.22",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-theme.git",
-                "reference": "d98851ea7028e19b3258bbeffb9666ffceb69ef2"
+                "reference": "28bed6d848b25c659bc25d6a24162e755541165f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-theme/zipball/d98851ea7028e19b3258bbeffb9666ffceb69ef2",
-                "reference": "d98851ea7028e19b3258bbeffb9666ffceb69ef2",
+                "url": "https://api.github.com/repos/msbios/msbios-theme/zipball/28bed6d848b25c659bc25d6a24162e755541165f",
+                "reference": "28bed6d848b25c659bc25d6a24162e755541165f",
                 "shasum": ""
             },
             "require": {
-                "msbios/assetic": "^0.0.3",
-                "msbios/i18n": "^0.1",
-                "msbios/msbios": "^0.0.1",
-                "msbios/stdlib": "^0.0.5",
-                "msbios/widget": "^0.0.1",
+                "msbios/assetic": "~1.0",
+                "msbios/i18n": "~1.0",
+                "msbios/msbios": "~1.0",
+                "msbios/stdlib": "~1.0",
+                "msbios/widget": "~1.0",
                 "zendframework/zend-loader": "^2.5",
                 "zendframework/zend-modulemanager": "^2.8",
                 "zendframework/zend-servicemanager": "^3.3"
             },
             "require-dev": {
-                "msbios/debug": "^0.0.3",
+                "msbios/debug": "^1.0",
                 "phpunit/phpunit": "^5.7",
                 "squizlabs/php_codesniffer": "^3.0",
                 "zendframework/zend-test": "^3.1"
@@ -396,24 +396,24 @@
             "keywords": [
                 "php"
             ],
-            "time": "2017-09-09T18:15:10+00:00"
+            "time": "2017-09-09T19:41:08+00:00"
         },
         {
             "name": "msbios/widget",
-            "version": "v0.0.1",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-widget.git",
-                "reference": "bd4997ec36b119faae419e99c0f3daf8408c42fb"
+                "reference": "2bedaf707bc86becf8a38078cd30c2a640ee827e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-widget/zipball/bd4997ec36b119faae419e99c0f3daf8408c42fb",
-                "reference": "bd4997ec36b119faae419e99c0f3daf8408c42fb",
+                "url": "https://api.github.com/repos/msbios/msbios-widget/zipball/2bedaf707bc86becf8a38078cd30c2a640ee827e",
+                "reference": "2bedaf707bc86becf8a38078cd30c2a640ee827e",
                 "shasum": ""
             },
             "require": {
-                "msbios/msbios": "^0.0.1",
+                "msbios/msbios": "~1.0",
                 "zendframework/zend-loader": "^2.5",
                 "zendframework/zend-modulemanager": "^2.8",
                 "zendframework/zend-servicemanager": "^3.3",
@@ -445,7 +445,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2017-08-08T23:14:56+00:00"
+            "time": "2017-09-09T19:12:23+00:00"
         },
         {
             "name": "patchwork/utf8",
