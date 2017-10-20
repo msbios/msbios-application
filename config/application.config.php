@@ -9,11 +9,13 @@ return [
         'Zend\I18n',
         'Zend\Navigation',
         'Zend\Router',
+        'ZendDeveloperTools',
 
         'MSBios\Widget',
         'MSBios\Theme',
         'MSBios\Navigation',
         'MSBios\Application',
+
     ],
     // These are various options for the listeners attached to the ModuleManager
     'module_listener_options' => [

@@ -3,6 +3,7 @@
  * @access protected
  * @author Judzhin Miles <info[woof-woof]msbios.com>
  */
+
 namespace MSBiosTest\Application\Controller;
 
 use MSBios\Application\Controller\IndexController;
@@ -34,13 +35,16 @@ class IndexControllerTest extends AbstractHttpControllerTestCase
         parent::setUp();
     }
 
+    /**
+     *
+     */
     public function testIndexActionCanBeAccessed()
     {
         $this->dispatch('/', 'GET');
         $this->assertResponseStatusCode(200);
-        // $this->assertModuleName('Zend\Application');
-        // $this->assertControllerName(IndexController::class); // as specified in router's controller name alias
-        // $this->assertControllerClass(IndexController::class);
+        // $this->assertModuleName('MSBios');
+        $this->assertControllerName(IndexController::class);
+        $this->assertControllerClass(IndexController::class);
         $this->assertMatchedRouteName('home');
     }
 
