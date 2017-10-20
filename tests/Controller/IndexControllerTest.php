@@ -42,21 +42,27 @@ class IndexControllerTest extends AbstractHttpControllerTestCase
     {
         $this->dispatch('/', 'GET');
         $this->assertResponseStatusCode(200);
-        // $this->assertModuleName('MSBios');
+        $this->assertModuleName('MSBios');
         $this->assertControllerName(IndexController::class);
-        $this->assertControllerClass(IndexController::class);
+        $this->assertControllerClass('IndexController');
         $this->assertMatchedRouteName('home');
     }
 
-//    public function testIndexActionViewModelTemplateRenderedWithinLayout()
-//    {
-//        $this->dispatch('/', 'GET');
-//        $this->assertQuery('.container .jumbotron');
-//    }
+    // /**
+    //  *
+    //  */
+    // public function testIndexActionViewModelTemplateRenderedWithinLayout()
+    // {
+    //     $this->dispatch('/', 'GET');
+    //     $this->assertQuery('.container .jumbotron');
+    // }
 
-//    public function testInvalidRouteDoesNotCrash()
-//    {
-//        $this->dispatch('/invalid/route', 'GET');
-//        $this->assertResponseStatusCode(404);
-//    }
+    // /**
+    //  *
+    //  */
+    // public function testInvalidRouteDoesNotCrash()
+    // {
+    //     $this->dispatch('/invalid/route', 'GET');
+    //     $this->assertResponseStatusCode(404);
+    // }
 }
