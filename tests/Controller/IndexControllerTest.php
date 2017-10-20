@@ -17,7 +17,7 @@ use Zend\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
 class IndexControllerTest extends AbstractHttpControllerTestCase
 {
     /**
-     *
+     * @return $this
      */
     public function setUp()
     {
@@ -33,10 +33,12 @@ class IndexControllerTest extends AbstractHttpControllerTestCase
         ));
 
         parent::setUp();
+
+        return $this;
     }
 
     /**
-     *
+     * @return $this
      */
     public function testIndexActionCanBeAccessed()
     {
@@ -46,23 +48,29 @@ class IndexControllerTest extends AbstractHttpControllerTestCase
         $this->assertControllerName(IndexController::class);
         $this->assertControllerClass('IndexController');
         $this->assertMatchedRouteName('home');
+
+        return $this;
     }
 
-    // /**
-    //  *
-    //  */
-    // public function testIndexActionViewModelTemplateRenderedWithinLayout()
-    // {
-    //     $this->dispatch('/', 'GET');
-    //     $this->assertQuery('.container .jumbotron');
-    // }
+    /**
+     * @return $this
+     */
+    public function testIndexActionViewModelTemplateRenderedWithinLayout()
+    {
+        $this->dispatch('/', 'GET');
+        $this->assertQuery('.container .jumbotron');
 
-    // /**
-    //  *
-    //  */
-    // public function testInvalidRouteDoesNotCrash()
-    // {
-    //     $this->dispatch('/invalid/route', 'GET');
-    //     $this->assertResponseStatusCode(404);
-    // }
+        return $this;
+    }
+
+    /**
+     * @return $this
+     */
+    public function testInvalidRouteDoesNotCrash()
+    {
+        $this->dispatch('/invalid/route', 'GET');
+        $this->assertResponseStatusCode(404);
+
+        return $this;
+    }
 }

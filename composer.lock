@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f85a35c4f3fb4f2f02190a17dcb1eaeb",
+    "content-hash": "79012a77018ad2ebf2eab472d2dcae8e",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -358,27 +358,23 @@
         },
         {
             "name": "msbios/theme",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-theme.git",
-                "reference": "28bed6d848b25c659bc25d6a24162e755541165f"
+                "reference": "90ffee547dee8c37cfeb5885e236f55b11974698"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-theme/zipball/28bed6d848b25c659bc25d6a24162e755541165f",
-                "reference": "28bed6d848b25c659bc25d6a24162e755541165f",
+                "url": "https://api.github.com/repos/msbios/msbios-theme/zipball/90ffee547dee8c37cfeb5885e236f55b11974698",
+                "reference": "90ffee547dee8c37cfeb5885e236f55b11974698",
                 "shasum": ""
             },
             "require": {
                 "msbios/assetic": "~1.0",
                 "msbios/i18n": "~1.0",
-                "msbios/msbios": "~1.0",
                 "msbios/stdlib": "~1.0",
-                "msbios/widget": "~1.0",
-                "zendframework/zend-loader": "^2.5",
-                "zendframework/zend-modulemanager": "^2.8",
-                "zendframework/zend-servicemanager": "^3.3"
+                "msbios/widget": "~1.0"
             },
             "require-dev": {
                 "msbios/debug": "^1.0",
@@ -387,6 +383,11 @@
                 "zendframework/zend-test": "^3.1"
             },
             "type": "library",
+            "extra": {
+                "zf": {
+                    "component": "MSBios\\Theme"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "MSBios\\Theme\\": "src/"
@@ -407,7 +408,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2017-09-09T19:41:08+00:00"
+            "time": "2017-10-20T13:50:55+00:00"
         },
         {
             "name": "msbios/widget",
@@ -2392,37 +2393,40 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.6.1",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "8e6e04167378abf1ddb4d3522d8755c5fd90d102"
+                "reference": "3b8a3a99ba1f6a3952ac2747d989303cbd6b7a3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/8e6e04167378abf1ddb4d3522d8755c5fd90d102",
-                "reference": "8e6e04167378abf1ddb4d3522d8755c5fd90d102",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/3b8a3a99ba1f6a3952ac2747d989303cbd6b7a3e",
+                "reference": "3b8a3a99ba1f6a3952ac2747d989303cbd6b7a3e",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4.0"
+                "php": "^5.6 || ^7.0"
             },
             "require-dev": {
-                "doctrine/collections": "1.*",
-                "phpunit/phpunit": "~4.1"
+                "doctrine/collections": "^1.0",
+                "doctrine/common": "^2.6",
+                "phpunit/phpunit": "^4.1"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "DeepCopy\\": "src/DeepCopy/"
-                }
+                },
+                "files": [
+                    "src/DeepCopy/deep_copy.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Create deep copies (clones) of your objects",
-            "homepage": "https://github.com/myclabs/DeepCopy",
             "keywords": [
                 "clone",
                 "copy",
@@ -2430,7 +2434,7 @@
                 "object",
                 "object graph"
             ],
-            "time": "2017-04-12T18:52:22+00:00"
+            "time": "2017-10-19T19:58:43+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
