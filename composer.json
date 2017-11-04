@@ -1,68 +1,65 @@
 {
-  "name": "msbios/application",
-  "description": "MSBios Application",
-  "license": "GPL",
-  "keywords": [
-    "php"
-  ],
-  "homepage": "https://github.com/msbios/msbios-application",
-  "minimum-stability": "stable",
-  "authors": [
-    {
-      "name": "Judzhin Miles",
-      "email": "info@msbios.com"
-    }
-  ],
-  "autoload": {
-    "psr-4": {
-      "MSBios\\Application\\": "src/"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "MSBiosTest\\Application\\": "tests/"
+    "name": "msbios/application",
+    "description": "MSBios Application",
+    "license": "GPL",
+    "keywords": [
+        "php"
+    ],
+    "homepage": "https://github.com/msbios/msbios-application",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Judzhin Miles",
+            "email": "info@msbios.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "MSBios\\Application\\": "src/"
+        }
     },
-    "files": [
-      "./vendor/zendframework/zend-test/autoload/phpunit-class-aliases.php"
-    ]
-  },
-  "require": {
-    "zendframework/zend-mvc": "^3.0.1",
-    "zendframework/zend-mvc-plugins": "^1.0",
-    "patchwork/utf8": "^1.3",
-    "msbios/theme": "~1.0",
-    "msbios/navigation": "~1.0"
-  },
-  "require-dev": {
-    "phpunit/phpunit": "^5.7",
-    "zendframework/zend-test": "^3.1",
-    "squizlabs/php_codesniffer": "^3.0",
-    "msbios/debug": "^1.0"
-  },
-  "scripts": {
-    "cs-check": "phpcs",
-    "cs-fix": "phpcbf",
-    "test": [
-      "@cs-check",
-      "phpunit --colors=always"
-    ],
-    "themes": "cd bin && ln -s ../themes/default/public default",
-    "serve": "php -S 0.0.0.0:3107 -t bin bin/msbios-application-module.php",
-    "commit": "git add . && git commit -a -m \"Lazy Composer Commiter\" && git push",
-    "deploy": [
-      "@themes"
-    ],
-    "cache":[
-      "rm -Rf data/cache/*.php",
-      "rm -Rf data/cache/*.dat",
-      "rm -Rf data/logs/*.log"
-    ],
-    "test-coverage": "phpunit --colors=always --coverage-clover clover.xml",
-    "upload-coverage": "coveralls -v"
-  },
-  "extra": {
-    "zf": {
-      "component": "MSBios\\Application"
+    "autoload-dev": {
+        "psr-4": {
+            "MSBiosTest\\Application\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^5.6 || ^7.0",
+        "zendframework/zend-component-installer": "^1.0 || ^0.7 || ^1.0.0-dev@dev",
+        "zendframework/zend-mvc": "^3.0.1",
+        "zendframework/zend-mvc-plugins": "^1.0",
+        "patchwork/utf8": "^1.3",
+        "msbios/theme": "^1.0",
+        "msbios/navigation": "^1.0"
+    },
+    "require-dev": {
+        "msbios/test": "^1.0",
+        "msbios/debug": "^1.0"
+    },
+    "scripts": {
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
+        "test": [
+            "@cs-check",
+            "phpunit --colors=always"
+        ],
+        "themes": "cd bin && ln -s ../themes/default/public default",
+        "serve": "php -S 0.0.0.0:3107 -t bin bin/msbios-application-module.php",
+        "commit": "git add . && git commit -a -m \"Lazy Composer Commiter\" && git push",
+        "deploy": [
+            "@themes"
+        ],
+        "cache": [
+            "rm -Rf data/cache/*.php",
+            "rm -Rf data/cache/*.dat",
+            "rm -Rf data/logs/*.log"
+        ],
+        "test-coverage": "phpunit --colors=always --coverage-clover clover.xml",
+        "upload-coverage": "coveralls -v"
+    },
+    "extra": {
+        "zf": {
+            "component": "MSBios\\Application"
+        }
     }
-  }
 }

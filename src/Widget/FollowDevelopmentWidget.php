@@ -6,20 +6,29 @@
 
 namespace MSBios\Application\Widget;
 
-use MSBios\Widget\AbstractRendererWidget;
+use MSBios\View\Model\ViewModel;
+use MSBios\Widget\RendererWidgetAwareInterface;
+use MSBios\Widget\RendererWidgetAwareTrait;
+use MSBios\Widget\WidgetInterface;
+use Zend\View\Model\ModelInterface;
 
 /**
  * Class FollowDevelopmentWidget
  * @package MSBios\Application\Widget
  */
-class FollowDevelopmentWidget extends AbstractRendererWidget
+class FollowDevelopmentWidget implements WidgetInterface, RendererWidgetAwareInterface
 {
+    use RendererWidgetAwareTrait;
+
     /**
      * @param null $data
      * @return string
      */
     public function output($data = null)
     {
-        return $this->render('follow-development', $data);
+        /** @var ModelInterface $viewModel */
+        $viewModel = new ViewModel($data);
+        $viewModel->setTemplate('follow-development');
+        return $this->render($viewModel);
     }
 }

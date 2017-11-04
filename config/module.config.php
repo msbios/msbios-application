@@ -39,7 +39,8 @@ return [
 
     'controllers' => [
         'factories' => [
-            Controller\IndexController::class => InvokableFactory::class,
+            Controller\IndexController::class =>
+                InvokableFactory::class,
         ]
     ],
 
@@ -60,12 +61,11 @@ return [
         ],
     ],
 
-    'service_manager' => [
-        'invokables' => [
-            Widget\FollowDevelopmentWidget::class
-        ],
+    'widget_manager' => [
         'factories' => [
-        ],
+            Widget\FollowDevelopmentWidget::class =>
+                InvokableFactory::class
+        ]
     ],
 
     \MSBios\Theme\Module::class => [
