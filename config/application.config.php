@@ -20,13 +20,13 @@ return [
         'Zend\Router',
         'Zend\Validator',
         'Zend\Navigation',
-        'ZendDeveloperTools',
-        'MSBios\Assetic',
+        'MSBios\Application',
+        // 'MSBios\Assetic',
         'MSBios\Theme',
         'MSBios\Widget',
-        'MSBios\I18n',
+        // 'MSBios\I18n',
         'MSBios\Navigation',
-        'MSBios\Application',
+        'ZendDeveloperTools',
     ],
     // These are various options for the listeners attached to the ModuleManager
     'module_listener_options' => [

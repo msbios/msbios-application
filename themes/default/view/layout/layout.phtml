@@ -43,7 +43,9 @@
             $this->navigation('Zend\Navigation\Default')
                 ->menu()
                 ->setUlClass('nav navbar-nav')
-                ->setMaxDepth(0); ?>
+                ->setPartial('partial/menu.phtml')
+                ->setMaxDepth(0)
+                ->render(); ?>
 
         </div>
     </div>
