@@ -1,7 +1,7 @@
 {
     "name": "msbios/application",
     "description": "MSBios Application",
-    "license": "GPL",
+    "license": "MIT",
     "keywords": [
         "php"
     ],
