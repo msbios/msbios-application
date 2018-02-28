@@ -24,6 +24,7 @@ return [
         'MSBios\Widget',
         'MSBios\Navigation',
         'MSBios\Application',
+        'MSBios\Assetic',
 
         'Zend\Log',
         'ZendDeveloperTools',
