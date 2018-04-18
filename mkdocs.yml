@@ -1,0 +1,9 @@
+docs_dir: docs/book
+site_dir: docs/html
+pages:
+    - index.md
+    - Intro: intro.md
+site_name: msbios-application
+site_description: msbios-application
+repo_url: 'https://github.com/msbios/msbios-application'
+copyright: 'Copyright (c) 2008—2018 Judzhin Miles. <a href="http://msbios.com/">MSBios</a>. All rights reserved.'

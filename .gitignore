@@ -115,3 +115,5 @@ composer.phar
 # composer.lock
 
 public/default
+
+docs/html/
