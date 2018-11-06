@@ -19,8 +19,11 @@ class Module implements
     AutoloaderProviderInterface
 {
     /** @const VERSION */
-    const VERSION = '1.0.10';
+    const VERSION = '1.0.11';
 
+    /**
+     * @return array|mixed|\Traversable
+     */
     public function getConfig()
     {
         return include __DIR__ . '/../config/module.config.php';

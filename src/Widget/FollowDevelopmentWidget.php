@@ -22,9 +22,10 @@ class FollowDevelopmentWidget implements WidgetInterface, RendererWidgetAwareInt
 
     /**
      * @param null $data
-     * @return string
+     * @param callable|null $callback
+     * @return mixed|string
      */
-    public function output($data = null)
+    public function output($data = null, callable $callback = null)
     {
         /** @var ModelInterface $viewModel */
         $viewModel = new ViewModel($data);

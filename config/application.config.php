@@ -6,7 +6,6 @@
 return [
     // Retrieve list of modules used in this application.
     'modules' => [
-        'MSBios\Cache',
         'Zend\Cache',
         'Zend\Serializer',
         'Zend\I18n',
@@ -22,6 +21,8 @@ return [
         'Zend\Router',
         'Zend\Validator',
         'Zend\Navigation',
+
+        'MSBios\Cache',
         'MSBios\View',
         'MSBios\Theme',
         'MSBios\Widget',
@@ -29,7 +30,6 @@ return [
         'MSBios\Application',
         'MSBios\Assetic',
 
-        'Zend\Log',
         'ZendDeveloperTools',
     ],
     // These are various options for the listeners attached to the ModuleManager
