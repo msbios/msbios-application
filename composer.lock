@@ -173,16 +173,16 @@
         },
         {
             "name": "msbios/assetic",
-            "version": "v1.0.5",
+            "version": "v1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-assetic.git",
-                "reference": "f925f48b1b3c40d7cbb7e1edd91798b72569c036"
+                "reference": "aca81950ffcc698c418cd9a8e31f7a48abfb9890"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-assetic/zipball/f925f48b1b3c40d7cbb7e1edd91798b72569c036",
-                "reference": "f925f48b1b3c40d7cbb7e1edd91798b72569c036",
+                "url": "https://api.github.com/repos/msbios/msbios-assetic/zipball/aca81950ffcc698c418cd9a8e31f7a48abfb9890",
+                "reference": "aca81950ffcc698c418cd9a8e31f7a48abfb9890",
                 "shasum": ""
             },
             "require": {
@@ -222,7 +222,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2018-03-18T15:21:18+00:00"
+            "time": "2018-11-20T21:41:42+00:00"
         },
         {
             "name": "msbios/cache",
@@ -390,16 +390,16 @@
         },
         {
             "name": "msbios/msbios",
-            "version": "v1.0.6",
+            "version": "v1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-msbios.git",
-                "reference": "3db910564d610ee2a0a737cbc94089bc933ef759"
+                "reference": "24fc90f18acce199ca01b31c67dcac13c2b0e1c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-msbios/zipball/3db910564d610ee2a0a737cbc94089bc933ef759",
-                "reference": "3db910564d610ee2a0a737cbc94089bc933ef759",
+                "url": "https://api.github.com/repos/msbios/msbios-msbios/zipball/24fc90f18acce199ca01b31c67dcac13c2b0e1c4",
+                "reference": "24fc90f18acce199ca01b31c67dcac13c2b0e1c4",
                 "shasum": ""
             },
             "require": {
@@ -410,7 +410,7 @@
                 "msbios/test": "^1.0"
             },
             "bin": [
-                "bin/msbios.sh"
+                "msbios.sh"
             ],
             "type": "library",
             "autoload": {
@@ -433,7 +433,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2018-03-07T10:56:01+00:00"
+            "time": "2018-11-08T20:31:25+00:00"
         },
         {
             "name": "msbios/navigation",
@@ -1490,16 +1490,16 @@
         },
         {
             "name": "zendframework/zend-hydrator",
-            "version": "2.4.0",
+            "version": "2.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-hydrator.git",
-                "reference": "bd48bc3bc046df007a94125f868dd1aa1b73a813"
+                "reference": "70b02f4d8676e64af932625751750b5ca72fff3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-hydrator/zipball/bd48bc3bc046df007a94125f868dd1aa1b73a813",
-                "reference": "bd48bc3bc046df007a94125f868dd1aa1b73a813",
+                "url": "https://api.github.com/repos/zendframework/zend-hydrator/zipball/70b02f4d8676e64af932625751750b5ca72fff3a",
+                "reference": "70b02f4d8676e64af932625751750b5ca72fff3a",
                 "shasum": ""
             },
             "require": {
@@ -1549,7 +1549,7 @@
                 "hydrator",
                 "zf"
             ],
-            "time": "2018-04-30T21:22:14+00:00"
+            "time": "2018-11-19T19:16:10+00:00"
         },
         {
             "name": "zendframework/zend-i18n",
@@ -3823,16 +3823,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "7.4.3",
+            "version": "7.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "c151651fb6ed264038d486ea262e243af72e5e64"
+                "reference": "b1be2c8530c4c29c3519a052c9fb6cee55053bbd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/c151651fb6ed264038d486ea262e243af72e5e64",
-                "reference": "c151651fb6ed264038d486ea262e243af72e5e64",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/b1be2c8530c4c29c3519a052c9fb6cee55053bbd",
+                "reference": "b1be2c8530c4c29c3519a052c9fb6cee55053bbd",
                 "shasum": ""
             },
             "require": {
@@ -3903,7 +3903,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-10-23T05:57:41+00:00"
+            "time": "2018-11-14T16:52:02+00:00"
         },
         {
             "name": "san/san-session-toolbar",
