@@ -1,17 +1,25 @@
 <?php
 /**
- * @link http://github.com/zendframework/ZendSkeletonApplication for the canonical source repository
- * @copyright Copyright (c) 2005-2016 Zend Technologies USA Inc. (http://www.zend.com)
- * @license http://framework.zend.com/license/new-bsd New BSD License
+ * @access protected
+ * @author Judzhin Miles <info[woof-woof]msbios.com>
  */
 
 namespace MSBios\Application;
 
+use MSBios\Factory\ModuleFactory;
 use Zend\Router\Http\Literal;
 use Zend\Router\Http\Segment;
 use Zend\ServiceManager\Factory\InvokableFactory;
 
 return [
+    'service_manager' => [
+        'factories' => [
+            Module::class =>
+                ModuleFactory::class,
+            ListenerAggregate::class =>
+                InvokableFactory::class
+        ]
+    ],
     'router' => [
         'routes' => [
             'home' => [
@@ -93,5 +101,26 @@ return [
                 ],
             ]
         ]
+    ],
+
+    Module::class => [
+        'error_reporting' => E_ALL & ~E_NOTICE & ~E_STRICT,
+        'date_default_timezone_set' => 'Europe/Kiev',
+        'mb_internal_encoding' => "UTF-8",
+        'ini_set' => [
+            'memory_limit' => "512M",
+            'short_open_tag' => 1,
+            'magic_quotes_gpc' => 0,
+            'magic_quotes_runtime' => 0,
+
+            // this is for simple_dom_html
+            'pcre.recursion-limit' => 100000,
+            'session.save_path' => './data/session'
+        ],
+        'version_compare' => '5.3.0'
+    ],
+
+    'listeners' => [
+        ListenerAggregate::class
     ]
 ];
