@@ -30,6 +30,7 @@ return [
         'MSBios\Navigation',
         'MSBios\Application',
         'MSBios\Assetic',
+        'MSBios',
 
         'ZendDeveloperTools',
     ],

@@ -6,7 +6,6 @@
 
 namespace MSBios\Application;
 
-use MSBios\Factory\ModuleFactory;
 use Zend\Router\Http\Literal;
 use Zend\Router\Http\Segment;
 use Zend\ServiceManager\Factory\InvokableFactory;
@@ -14,8 +13,6 @@ use Zend\ServiceManager\Factory\InvokableFactory;
 return [
     'service_manager' => [
         'factories' => [
-            Module::class =>
-                ModuleFactory::class,
             ListenerAggregate::class =>
                 InvokableFactory::class
         ]
