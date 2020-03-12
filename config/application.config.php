@@ -6,6 +6,7 @@
 return [
     // Retrieve list of modules used in this application.
     'modules' => [
+        'MSBios\I18n',
         'MSBios\Session',
         'Zend\Cache',
         'Zend\Serializer',
