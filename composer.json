@@ -31,8 +31,8 @@
     "zendframework/zend-mvc-plugins": "^1.0"
   },
   "require-dev": {
-    "msbios/debug": "^1.0",
-    "msbios/test": "^1.0"
+    "msbios/debug": "^2.0",
+    "msbios/test": "^2.0"
   },
   "scripts": {
     "cs-check": "phpcs",
@@ -42,9 +42,7 @@
       "phpunit --colors=always"
     ],
     "test-coverage": "phpunit --colors=always --coverage-clover clover.xml",
-    "upload-coverage": "coveralls -v",
-    "themes": "cd public && ln -s ../themes/default/public default",
-    "serve": "php -S 0.0.0.0:3107 -t public public/index.php"
+    "upload-coverage": "coveralls -v"
   },
   "extra": {
     "zf": {

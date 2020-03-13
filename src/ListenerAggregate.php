@@ -6,14 +6,20 @@
 
 namespace MSBios\Application;
 
-use Zend\EventManager\AbstractListenerAggregate;
-use Zend\EventManager\EventInterface;
-use Zend\EventManager\EventManagerInterface;
-use Zend\ModuleManager\Feature\BootstrapListenerInterface;
-use Zend\Mvc\MvcEvent;
+// use Zend\EventManager\AbstractListenerAggregate;
+// use Zend\EventManager\EventInterface;
+// use Zend\EventManager\EventManagerInterface;
+// use Zend\ModuleManager\Feature\BootstrapListenerInterface;
+// use Zend\Mvc\MvcEvent;
+use Laminas\EventManager\AbstractListenerAggregate;
+use Laminas\EventManager\EventInterface;
+use Laminas\EventManager\EventManagerInterface;
+use Laminas\ModuleManager\Feature\BootstrapListenerInterface;
+use Laminas\Mvc\MvcEvent;
 
 /**
  * Class ListenerAggregate
+ *
  * @package MSBios\Application
  */
 class ListenerAggregate extends AbstractListenerAggregate implements BootstrapListenerInterface
@@ -62,6 +68,7 @@ class ListenerAggregate extends AbstractListenerAggregate implements BootstrapLi
 
         // check some system variables
         if (version_compare(PHP_VERSION, $config['version_compare'], "<")) {
+            /** @var string $message */
             $message = sprintf(
                 "Application requires at least PHP version %s your PHP version is: %s",
                 $config['version_compare'],
@@ -70,6 +77,7 @@ class ListenerAggregate extends AbstractListenerAggregate implements BootstrapLi
         }
 
         if (get_magic_quotes_gpc()) {
+            /** @var string $message */
             $message = "Application requires magic_quotes_gpc OFF";
         }
     }

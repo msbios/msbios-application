@@ -15,21 +15,21 @@ class Module extends \MSBios\Module
     const VERSION = '1.0.15';
 
     /**
-     * @inheritdoc
+     * @inheritDoc
      *
      * @return string
      */
-    protected function getDir()
+    protected function getDir(): string
     {
         return __DIR__;
     }
 
     /**
-     * @inheritdoc
+     * @inheritDoc
      *
      * @return string
      */
-    protected function getNamespace()
+    protected function getNamespace(): string
     {
         return __NAMESPACE__;
     }
