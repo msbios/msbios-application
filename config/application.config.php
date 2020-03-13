@@ -6,8 +6,6 @@
 return [
     // Retrieve list of modules used in this application.
     'modules' => [
-        'MSBios\I18n',
-        'MSBios\Session',
         'Zend\Cache',
         'Zend\Serializer',
         'Zend\I18n',
@@ -24,13 +22,11 @@ return [
         'Zend\Validator',
         'Zend\Navigation',
 
+        'MSBios\I18n',
+        'MSBios\Session',
         'MSBios\Cache',
         'MSBios\View',
-        'MSBios\Theme',
-        'MSBios\Widget',
-        'MSBios\Navigation',
         'MSBios\Application',
-        'MSBios\Assetic',
         'MSBios',
 
         'ZendDeveloperTools',

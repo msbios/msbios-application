@@ -28,9 +28,7 @@
     "patchwork/utf8": "^1.3",
     "zendframework/zend-component-installer": "^1.0 || ^0.7 || ^1.0.0-dev@dev",
     "zendframework/zend-mvc": "^3.0.1",
-    "zendframework/zend-mvc-plugins": "^1.0",
-    "msbios/theme": "^1.0",
-    "msbios/navigation": "^1.0"
+    "zendframework/zend-mvc-plugins": "^1.0"
   },
   "require-dev": {
     "msbios/debug": "^1.0",
