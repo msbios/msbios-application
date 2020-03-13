@@ -1,12 +1,13 @@
 <?php
 
-use Zend\Mvc\Application;
-use Zend\Stdlib\ArrayUtils;
+use Laminas\Mvc\Application;
+use Laminas\Stdlib\ArrayUtils;
 
 /**
  * This makes our life easier when dealing with paths. Everything is relative
  * to the application root now.
  */
+
 chdir(dirname(__DIR__));
 
 // Decline static file requests back to the PHP built-in webserver
