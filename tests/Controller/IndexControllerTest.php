@@ -6,9 +6,12 @@
 
 namespace MSBiosTest\Application\Controller;
 
+use Laminas\Stdlib\ArrayUtils;
+use Laminas\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
 use MSBios\Application\Controller\IndexController;
-use Zend\Stdlib\ArrayUtils;
-use Zend\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
+
+// use Zend\Stdlib\ArrayUtils;
+// use Zend\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
 
 /**
  * Class IndexControllerTest
@@ -17,9 +20,9 @@ use Zend\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
 class IndexControllerTest extends AbstractHttpControllerTestCase
 {
     /**
-     * @return $this
+     *
      */
-    public function setUp()
+    protected function setUp(): void
     {
         // The module configuration should still be applicable for tests.
         // You can override configuration here with test case specific values,
@@ -33,14 +36,13 @@ class IndexControllerTest extends AbstractHttpControllerTestCase
         ));
 
         parent::setUp();
-
-        return $this;
     }
 
     /**
      * @return $this
+     * @throws \Exception
      */
-    public function testIndexActionCanBeAccessed()
+    public function testIndexActionCanBeAccessed(): self
     {
         $this->dispatch('/', 'GET');
         $this->assertResponseStatusCode(200);
@@ -54,8 +56,9 @@ class IndexControllerTest extends AbstractHttpControllerTestCase
 
     /**
      * @return $this
+     * @throws \Exception
      */
-    public function testIndexActionViewModelTemplateRenderedWithinLayout()
+    public function testIndexActionViewModelTemplateRenderedWithinLayout(): self
     {
         $this->dispatch('/', 'GET');
         $this->assertQuery('.container .jumbotron');
@@ -65,8 +68,9 @@ class IndexControllerTest extends AbstractHttpControllerTestCase
 
     /**
      * @return $this
+     * @throws \Exception
      */
-    public function testInvalidRouteDoesNotCrash()
+    public function testInvalidRouteDoesNotCrash(): self
     {
         $this->dispatch('/invalid/route', 'GET');
         $this->assertResponseStatusCode(404);
